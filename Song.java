@@ -8,20 +8,22 @@ public class Song
     //Fields-- what information do we want each Song to store?
     private String title;
     private String artist;
-    private int duration;
+    private double duration; //the duration in minutes
+    private int releaseYear;
     private boolean liked;
 
     /**
      * Constructor-- what information needs to be given to make a Song?
-     * In order to make the song, we need the title, the artist, the duration(in secs).
+     * In order to make the song, we need the title, the artist, the duration(in mins).
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      * Liked songs have a boolean to determine the status
      */
-    public Song(String songName, int songLength)
+    public Song(String title, String artist, int releaseYear, double songLength)
     {
-        title = songName;
+        this.title = title;
         this.artist = artist;
         duration = songLength;
+        this.releaseYear = releaseYear;
         this.liked = liked;
     }
 
@@ -69,13 +71,16 @@ public class Song
         }
     }
     
-     /**
-      * Methods-- what will you want each Song to do?
-      * Consider all the getter methods (getName, getArtist, etc.)
-      * You should probably have a toString method to be able to get the information for the full
-      * song easily as well!
-      * What kind of mutator (setter) methods will you need?
-      */
-
-
+    /**
+     * Method toString allows for all the information about the song to be returned
+     * @return all the information about the song
+     */
+    public String toString()
+    {
+        return "Song Info:" + "\n Title: " + title + 
+            "\n Artist: " + artist + 
+            "\n Release Year: " + releaseYear +
+            "\n Duration: " + songLength +
+            "\n Liked: " + (liked? "Yes" : "No");
+    }
 }
