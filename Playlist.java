@@ -15,7 +15,7 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
     
-     ArrayList <Song> p = new ArrayList <Song>();
+    private ArrayList <Song> p;
 
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
@@ -23,7 +23,7 @@ public class Playlist {
       */
     public Playlist() 
     {
-        Playlist p = new Playlist();
+        p = new ArrayList<Song>();
     }
 
     /**
@@ -37,8 +37,14 @@ public class Playlist {
     /**
      * "Liking" a song
      */
-    public void likeSong(Song 
-
+    public void likeSong(Song)
+    {
+        
+    /**
+     * Removing a specific song
+     * @param songName the song to be removed
+     */
+    
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
        * Adding a song
