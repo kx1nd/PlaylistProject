@@ -33,6 +33,22 @@ public class Playlist {
     {
         p.add(newSong);
     }
+
+     /**
+     * "Liking" a song
+     */
+    public boolean likeSong (String title) 
+    {
+        for (Song p : p) 
+        {
+            if (p.getName().equalsIgnoreCase(title)) 
+            {
+                p.setLiked(true);
+                return true;
+            }
+        }
+        return false;
+    }
         
     /**
      * Removing a specific song
@@ -48,19 +64,45 @@ public class Playlist {
             }
         }
     }
+
     /**
-     * "Liking" a song
+     * Examining all songs
+     * @return line that says printing the songs and prints all the songs with the info
      */
-    public void likeSong (String title) 
+    public void allSongs()
     {
-        for (Song p : p) 
+        System.out.println("Printing all songs");
+        for (Song song : p)
         {
-            if (p.getName().equalsIgnoreCase(title)) 
-            {
-                p.setLiked(true);
-            }
+            System.out.println(song.toString());
         }
     }
+
+    /**
+     * Method LikedSongs creates a sublist of all the liked songs and returns that
+     * @return the liked songs from the playlist
+     */
+    public void likedSongs()
+    {
+        ArrayList<Song> liked = new ArrayList<>();
+        for (Song song : p)
+        {
+            if (song.likedOrNot())
+            {
+                liked.add(song);
+            } 
+        }
+        // Print the liked songs
+        System.out.println("Printing the Liked Songs: ");
+        for (Song song : liked) 
+        {
+            System.out.println(song.toString());
+        }
+    }
+    /**
+     * 
+     */
+   
     
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
