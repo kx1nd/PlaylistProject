@@ -13,8 +13,7 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
     
-     ArrayList <Song> Playlist = new ArrayList <Song>();
-
+     ArrayList <Song> p = new ArrayList <Song>();
 
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
@@ -22,7 +21,7 @@ public class Playlist {
       */
     public Playlist() 
     {
-        
+        Playlist p = new Playlist();
     }
 
     /**
@@ -30,7 +29,7 @@ public class Playlist {
      */
     public void addSong(Song newSong)
     {
-        Playlist.add(newSong);
+        p.add(newSong);
     }
 
       /**
