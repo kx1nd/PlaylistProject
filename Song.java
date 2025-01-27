@@ -24,7 +24,7 @@ public class Song
         this.artist = artist;
         duration = songLength;
         this.releaseYear = releaseYear;
-        this.liked = liked;
+        liked = false;
     }
 
 
@@ -50,7 +50,7 @@ public class Song
      * Method getDuration returns the length of the song
      * @return the song's length
      */
-    public double getDuration()
+    public double getDuration(double songLength)
     {
         songLength = songLength / 60;
         return songLength;
@@ -77,7 +77,7 @@ public class Song
         return "Song Info:" + "\n Title: " + title + 
             "\n Artist: " + artist + 
             "\n Release Year: " + releaseYear +
-            "\n Duration: " + songLength +
+            "\n Duration: " + "songLength" +
             "\n Liked: " + (liked? "Yes" : "No");
     }
 }
