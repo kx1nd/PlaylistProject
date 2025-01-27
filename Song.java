@@ -8,7 +8,7 @@ public class Song
     //Fields-- what information do we want each Song to store?
     private String title;
     private String artist;
-    private double duration; //duration in seconds
+    private int duration; //duration in seconds
     private int releaseYear;
     private boolean liked;
 
@@ -18,7 +18,7 @@ public class Song
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      * Liked songs have a boolean to determine the status
      */
-    public Song(String title, String artist, int releaseYear, double songLength)
+    public Song(String title, String artist, int releaseYear, int songLength)
     {
         this.title = title;
         this.artist = artist;
@@ -50,7 +50,7 @@ public class Song
      * Method getDuration returns the length of the song
      * @return the song's length
      */
-    public double getDuration(double songLength)
+    public int getDuration(int songLength)
     {
         songLength = songLength / 60;
         return songLength;
