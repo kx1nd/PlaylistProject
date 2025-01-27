@@ -44,6 +44,22 @@ public class Playlist {
      * Removing a specific song
      * @param songName the song to be removed
      */
+    public void removeSong (String title)
+    {
+        for (int i = 0; i < p.size(); i++) {
+            if (p.get(i).getName().equalsIgnoreCase(title)) {
+                p.remove(i);
+            }
+        }
+    }
+
+    public void likeSong (String title) {
+        for (Song p : p) {
+            if (p.getName().equalsIgnoreCase(title)) {
+                p.setLiked(true);
+            }
+        }
+    }
     
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
