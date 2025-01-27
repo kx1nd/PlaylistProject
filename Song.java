@@ -34,7 +34,7 @@ public class Song
      */
     public String getName()
     {
-        return songName;
+        return title;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Song
      * Method getDuration returns the length of the song
      * @return the song's length
      */
-    public int getDuration()
+    public double getDuration()
     {
         songLength = songLength / 60;
         return songLength;
