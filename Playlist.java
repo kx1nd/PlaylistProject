@@ -33,12 +33,6 @@ public class Playlist {
     {
         p.add(newSong);
     }
-
-    /**
-     * "Liking" a song
-     */
-    public void likeSong(Song)
-    {
         
     /**
      * Removing a specific song
@@ -46,16 +40,23 @@ public class Playlist {
      */
     public void removeSong (String title)
     {
-        for (int i = 0; i < p.size(); i++) {
-            if (p.get(i).getName().equalsIgnoreCase(title)) {
+        for (int i = 0; i < p.size(); i++) 
+        {
+            if (p.get(i).getName().equalsIgnoreCase(title)) 
+            {
                 p.remove(i);
             }
         }
     }
-
-    public void likeSong (String title) {
-        for (Song p : p) {
-            if (p.getName().equalsIgnoreCase(title)) {
+    /**
+     * "Liking" a song
+     */
+    public void likeSong (String title) 
+    {
+        for (Song p : p) 
+        {
+            if (p.getName().equalsIgnoreCase(title)) 
+            {
                 p.setLiked(true);
             }
         }
