@@ -8,7 +8,7 @@ public class Song
     //Fields-- what information do we want each Song to store?
     private String title;
     private String artist;
-    private double duration; //the duration in minutes
+    private double duration; //duration in seconds
     private int releaseYear;
     private boolean liked;
 
@@ -61,16 +61,13 @@ public class Song
      */
     public boolean likedOrNot()
     {
-        if (liked)
-        {
-            liked = true;
-        }
-        else 
-        {
-            liked = false;
-        }
+        return liked;
     }
-    
+
+    public void setLiked(boolean state)
+    {
+        liked = state;
+    }
     /**
      * Method toString allows for all the information about the song to be returned
      * @return all the information about the song
