@@ -22,7 +22,7 @@ public class Song
     {
         this.title = title;
         this.artist = artist;
-        duration = songLength;
+        this.duration = duration;
         this.releaseYear = releaseYear;
         liked = false;
     }
@@ -50,10 +50,9 @@ public class Song
      * Method getDuration returns the length of the song
      * @return the song's length
      */
-    public int getDuration(int songLength)
+    public int getDuration()
     {
-        songLength = songLength / 60;
-        return songLength;
+        return duration;
     }
 
     /**

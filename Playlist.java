@@ -100,8 +100,19 @@ public class Playlist {
         }
     }
     /**
-     * 
+     * Method getTotalDuration determines the total duration of all the selected songs
+     * @return the total duration of the songs
      */
+    public int getTotalDuration() 
+    {
+        int totalDuration = 0;
+        for (Song song : p) 
+        {
+            totalDuration += (int) song.getDuration(); // Casting to int
+        }
+        return totalDuration;
+    }
+    
    
     
       /**
