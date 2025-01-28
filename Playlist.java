@@ -71,7 +71,6 @@ public class Playlist {
      */
     public void allSongs()
     {
-        System.out.println("Printing all songs");
         for (Song song : p)
         {
             System.out.println(song.toString());
@@ -79,8 +78,7 @@ public class Playlist {
     }
 
     /**
-     * Method LikedSongs creates a sublist of all the liked songs and returns that
-     * @return the liked songs from the playlist
+     * Method LikedSongs creates a sublist of all the liked songs to use to return in the PlaylistTester.java
      */
     public void likedSongs()
     {
@@ -91,12 +89,6 @@ public class Playlist {
             {
                 liked.add(song);
             } 
-        }
-        // Print the liked songs
-        System.out.println("Printing the Liked Songs: ");
-        for (Song song : liked) 
-        {
-            System.out.println(song.toString());
         }
     }
 
@@ -119,7 +111,13 @@ public class Playlist {
      */
     public void removeUnlikedSongs()
     {
-        
+        for (int i = p.size() ; i >= 0; i--)
+        {
+            if (!p.get(i).likedOrNot())
+            {
+                p.remove(i);
+            }
+        }
     }
 
    
