@@ -99,6 +99,7 @@ public class Playlist {
             System.out.println(song.toString());
         }
     }
+
     /**
      * Method getTotalDuration determines the total duration of all the selected songs
      * @return the total duration of the songs
@@ -108,11 +109,19 @@ public class Playlist {
         int totalDuration = 0;
         for (Song song : p) 
         {
-            totalDuration += (int) song.getDuration(); // Casting to int
+            totalDuration += song.getDuration(); // Casting to int
         }
         return totalDuration;
     }
-    
+
+    /**
+     * Method removeUnlikedSongs removes the unliked songs from the playlist
+     */
+    public void removeUnlikedSongs()
+    {
+        
+    }
+
    
     
       /**
