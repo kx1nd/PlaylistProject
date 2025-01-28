@@ -6,7 +6,7 @@
  */
 
  import java.util.ArrayList;
- 
+
 public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
@@ -18,13 +18,11 @@ public class PlaylistTester {
         /**
          * Adding songs: APT by Rosé & Bruno Mars, Popular by Ariana Grande, & In The Stars by Benson Boone
          */
-        myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 170));
 
         myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 2024, 180));
         myPlaylist.addSong(new Song("Popular", "The Weeknd & Madonna", 2023, 210));
         myPlaylist.addSong(new Song("In the Stars", "Benson Boone", 2022, 195));
         myPlaylist.addSong(new Song("Unholy", "Sam Smith & Kim Petras", 2022, 185));
-        myPlaylist.addSong(new Song("Blinding Lights", "The Weeknd", 2020, 200));
 
 
 
