@@ -23,7 +23,7 @@ public class PlaylistTester {
         myPlaylist.allSongs();
 
 
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
+        System.out.println("\nLiking 'APT' and 'Popular'...\n");
         //Once your songs are 'liked', this should be reflected in the next printout
         
         myPlaylist.likeSong("APT");
@@ -34,7 +34,7 @@ public class PlaylistTester {
 
         myPlaylist.allSongs();
 
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        System.out.println("\nRemoving 'In the Stars' ...\n");
         
         myPlaylist.removeSong("In the Stars");
 
