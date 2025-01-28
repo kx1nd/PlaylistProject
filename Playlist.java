@@ -88,6 +88,7 @@ public class Playlist {
             if (song.likedOrNot())
             {
                 liked.add(song);
+                System.out.println(song);
             } 
         }
     }
