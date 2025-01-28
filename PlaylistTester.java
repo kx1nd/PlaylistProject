@@ -1,21 +1,19 @@
 /**
- * Sample of a tester file for the Playlist class. This file should demonstrate all the capability of your
- * playlist in the main method. You don't need to follow the testing specifications of this exactly
- * if you want to write your own separate tester instead.
+ * Tester for PLaylist.java class - Should follow the guidelines of the project in the given rubric on the crashwhite.com website
  * Note that there's no need for a Scanner in this project-- all of the playlist can be 'hardcoded' into main.
- * @author
- * @version
+ * @ William Son & Kelland Hong
+ * @ 2025-01-28
  */
 public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
-        //Make your playlist here
+        //New playlist for the main method 
 
+        Playlist myPlaylist = new Playlist();
+        
         System.out.println("Adding songs to the Playlist...\n");
         /**
-         * Add some songs here. Note that the format for adding a Song to a Playlist p
-         * is something like...
-         * p.addSong(new Song(..., ..., ...))
+         * Adding songs: APT by Rosé & Bruno Mars, 
          */
 
 
