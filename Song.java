@@ -50,7 +50,7 @@ public class Song
      * Method getDuration returns the length of the song
      * @return the song's length
      */
-    public int getDuration()
+    public int getDuration()    
     {
         return duration;
     }
