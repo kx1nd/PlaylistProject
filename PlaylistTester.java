@@ -16,8 +16,9 @@ public class PlaylistTester {
         
         System.out.println("Adding songs to the Playlist...\n");
         /**
-         * Adding songs: APT by Rosé & Bruno Mars, 
+         * Adding songs: APT by Rosé & Bruno Mars, Popular by Ariana Grande, & In The Stars by Benson Boone
          */
+        myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 170));
 
         myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 2024, 180));
         myPlaylist.addSong(new Song("Popular", "The Weeknd & Madonna", 2023, 210));
