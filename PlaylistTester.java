@@ -50,6 +50,10 @@ public class PlaylistTester {
 
         myPlaylist.allSongs();
 
+        System.out.println("\nRemoving all unliked songs from the playlist...\n");
+        //This should be doable with a single method call
+
+        myPlaylist.removeUnlikedSongs();
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
 
@@ -63,16 +67,11 @@ public class PlaylistTester {
         int seconds = totalDuration % 60;
         System.out.println("Total Duration: " + minutes + " minutes " + seconds + " seconds");
 
-        System.out.println("\nRemoving all unliked songs from the playlist...\n");
-        //This should be doable with a single method call
-
-        myPlaylist.removeUnlikedSongs();
-
-        System.out.println("Printing all songs...\n");
+        System.out.println("\nPrinting all songs...\n");
         //This should now look like only the liked songs list from before
 
         myPlaylist.allSongs();
 
-        System.out.println("\nPlaylist testing done!");
+        System.out.println("\nPlaylist Testing Done!");
     }
 }
