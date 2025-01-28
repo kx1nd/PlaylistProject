@@ -7,8 +7,6 @@ import java.util.ArrayList;
  * @version 2025-01-27
  */
 
-import java.util.ArrayList;
-
 public class Playlist {
     /**
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
@@ -113,7 +111,7 @@ public class Playlist {
      */
     public void removeUnlikedSongs()
     {
-        for (int i = p.size() - 1; i >= 0; i--) // Start at p.size() - 1
+        for (int i = p.size() - 1; i >= 0; i--) 
         {
             if (!p.get(i).likedOrNot())
             {
@@ -121,6 +119,7 @@ public class Playlist {
             }
         }
     }
+
 
 
    
