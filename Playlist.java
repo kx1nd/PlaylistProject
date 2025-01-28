@@ -39,11 +39,11 @@ public class Playlist {
      */
     public boolean likeSong (String title) 
     {
-        for (Song p : p) 
+        for (Song song : p) 
         {
-            if (p.getName().equalsIgnoreCase(title)) 
+            if (song.getName().equalsIgnoreCase(title)) 
             {
-                p.setLiked(true);
+                song.setLiked(true);
                 return true;
             }
         }
@@ -56,7 +56,7 @@ public class Playlist {
      */
     public void removeSong (String title)
     {
-        for (int i = 0; i < p.size(); i++) 
+        for (int i = p.size() - 1; i >= 0; i--) 
         {
             if (p.get(i).getName().equalsIgnoreCase(title)) 
             {
@@ -64,6 +64,7 @@ public class Playlist {
             }
         }
     }
+
 
     /**
      * Examining all songs
@@ -112,7 +113,7 @@ public class Playlist {
      */
     public void removeUnlikedSongs()
     {
-        for (int i = p.size() ; i >= 0; i--)
+        for (int i = p.size() - 1; i >= 0; i--) // Start at p.size() - 1
         {
             if (!p.get(i).likedOrNot())
             {
@@ -120,6 +121,7 @@ public class Playlist {
             }
         }
     }
+
 
    
     

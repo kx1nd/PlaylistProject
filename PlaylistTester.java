@@ -4,6 +4,9 @@
  * @ William Son & Kelland Hong
  * @ 2025-01-28
  */
+
+ import java.util.ArrayList;
+ 
 public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
@@ -15,6 +18,12 @@ public class PlaylistTester {
         /**
          * Adding songs: APT by Rosé & Bruno Mars, 
          */
+
+        myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 2024, 180));
+        myPlaylist.addSong(new Song("Popular", "The Weeknd & Madonna", 2023, 210));
+        myPlaylist.addSong(new Song("In the Stars", "Benson Boone", 2022, 195));
+        myPlaylist.addSong(new Song("Unholy", "Sam Smith & Kim Petras", 2022, 185));
+        myPlaylist.addSong(new Song("Blinding Lights", "The Weeknd", 2020, 200));
 
 
 
@@ -50,12 +59,21 @@ public class PlaylistTester {
         System.out.println("\nPrinting the total duration of all songs...\n");
         //Note that the format should look something like minutes:seconds
 
+        int totalDuration = myPlaylist.getTotalDuration();
+        int minutes = totalDuration / 60;
+        int seconds = totalDuration % 60;
+        System.out.println("Total Duration: " + minutes + " minutes " + seconds + " seconds");
 
         System.out.println("\nRemoving all unliked songs from the playlist...\n");
         //This should be doable with a single method call
 
+        myPlaylist.removeUnlikedSongs();
 
         System.out.println("Printing all songs...\n");
         //This should now look like only the liked songs list from before
+
+        myPlaylist.allSongs();
+
+        System.out.println("\nPlaylist testing done!");
     }
 }

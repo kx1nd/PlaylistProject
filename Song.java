@@ -22,7 +22,7 @@ public class Song
     {
         this.title = title;
         this.artist = artist;
-        this.duration = duration;
+        this.duration = songLength;
         this.releaseYear = releaseYear;
         liked = false;
     }
@@ -76,7 +76,7 @@ public class Song
         return "Song Info:" + "\n Title: " + title + 
             "\n Artist: " + artist + 
             "\n Release Year: " + releaseYear +
-            "\n Duration: " + "songLength" +
+            "\n Duration: " + duration +
             "\n Liked: " + (liked? "Yes" : "No");
     }
 }
