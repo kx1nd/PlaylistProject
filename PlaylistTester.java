@@ -16,15 +16,13 @@ public class PlaylistTester {
         
         System.out.println("Adding songs to the Playlist...\n");
         /**
-         * Adding songs: APT by Rosé & Bruno Mars, Popular by Ariana Grande, & In The Stars by Benson Boone
+         * Adding songs: APT by Rosé & Bruno Mars, Popular by Ariana Grande, Unholy by Sam Smith & Kim Petras, & In The Stars by Benson Boone
          */
 
         myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 2024, 180));
-        myPlaylist.addSong(new Song("Popular", "The Weeknd & Madonna", 2023, 210));
+        myPlaylist.addSong(new Song("Popular", "Ariana Grande", 2023, 210));
         myPlaylist.addSong(new Song("In the Stars", "Benson Boone", 2022, 195));
         myPlaylist.addSong(new Song("Unholy", "Sam Smith & Kim Petras", 2022, 185));
-
-
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
@@ -65,7 +63,7 @@ public class PlaylistTester {
         int totalDuration = myPlaylist.getTotalDuration();
         int minutes = totalDuration / 60;
         int seconds = totalDuration % 60;
-        System.out.println("Total Duration: " + minutes + " minutes " + seconds + " seconds");
+        System.out.println(minutes + ":" + seconds);
 
         System.out.println("\nPrinting all songs...\n");
         //This should now look like only the liked songs list from before
