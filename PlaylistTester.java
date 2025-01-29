@@ -70,6 +70,6 @@ public class PlaylistTester {
 
         myPlaylist.allSongs();
 
-        System.out.println("\nPlaylist Testing Done!");
+        System.out.println("\nPlaylist Testing is done! :D");
     }
 }
