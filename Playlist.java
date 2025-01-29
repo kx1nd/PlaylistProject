@@ -72,7 +72,14 @@ public class Playlist {
     {
         for (Song song : p)
         {
-            System.out.println(song.toString());
+            if (song.likedOrNot())
+            {
+                System.out.println(song + "- liked");
+            }
+            else 
+            {
+                System.out.println(song.toString());
+            }
         }
     }
 
@@ -87,7 +94,7 @@ public class Playlist {
             if (song.likedOrNot())
             {
                 liked.add(song);
-                System.out.println(song);
+                System.out.println(song + "- liked");
             } 
         }
     }
