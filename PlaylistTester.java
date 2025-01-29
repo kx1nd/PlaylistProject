@@ -19,10 +19,10 @@ public class PlaylistTester {
          * Adding songs: APT by Rosé & Bruno Mars, Popular by Ariana Grande, Unholy by Sam Smith & Kim Petras, & In The Stars by Benson Boone
          */
 
-        myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 2024, 180));
-        myPlaylist.addSong(new Song("Popular", "Ariana Grande", 2023, 210));
-        myPlaylist.addSong(new Song("In the Stars", "Benson Boone", 2022, 195));
-        myPlaylist.addSong(new Song("Unholy", "Sam Smith & Kim Petras", 2022, 185));
+        myPlaylist.addSong(new Song("APT", "Rosé & Bruno Mars", 180));
+        myPlaylist.addSong(new Song("Popular", "Ariana Grande", 210));
+        myPlaylist.addSong(new Song("In the Stars", "Benson Boone", 195));
+        myPlaylist.addSong(new Song("Unholy", "Sam Smith & Kim Petras", 185));
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
@@ -39,7 +39,7 @@ public class PlaylistTester {
         System.out.println("Printing the songs...\n");
 
         myPlaylist.allSongs();
-
+        
         System.out.println("\nRemoving 'In the Stars' ...\n");
         
         myPlaylist.removeSong("In the Stars");

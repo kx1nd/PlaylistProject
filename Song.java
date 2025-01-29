@@ -9,7 +9,6 @@ public class Song
     private String title;
     private String artist;
     private int duration; //duration in seconds
-    private int releaseYear;
     private boolean liked;
 
     /**
@@ -18,12 +17,11 @@ public class Song
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      * Liked songs have a boolean to determine the status
      */
-    public Song(String title, String artist, int releaseYear, int songLength)
+    public Song(String title, String artist, int songLength)
     {
         this.title = title;
         this.artist = artist;
         this.duration = songLength;
-        this.releaseYear = releaseYear;
         liked = false;
     }
 
@@ -88,10 +86,5 @@ public class Song
         
         return "'" + title + "'" + " by " + artist + " (" + minutes + ":" + newSeconds + ")";
 
-        // return "Song Info:" + "\n Title: " + title + 
-        //     "\n Artist: " + artist + 
-        //     "\n Release Year: " + releaseYear +
-        //     "\n Duration: " + duration +
-        //     "\n Liked: " + (liked? "Yes" : "No");
     }
 }
