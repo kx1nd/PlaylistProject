@@ -75,8 +75,18 @@ public class Song
     {
         int minutes = duration / 60;
         int seconds = duration % 60;
+        String newSeconds = "";
+
+        if (seconds < 10)
+        {
+            newSeconds = "0" + seconds;
+        }
+        else
+        {
+            newSeconds += seconds;
+        }
         
-        return "'" + title + "'" + " by " + artist + " (" + minutes + ":" + seconds + ")";
+        return "'" + title + "'" + " by " + artist + " (" + minutes + ":" + newSeconds + ")";
 
         // return "Song Info:" + "\n Title: " + title + 
         //     "\n Artist: " + artist + 
