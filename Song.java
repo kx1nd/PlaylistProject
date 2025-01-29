@@ -73,10 +73,15 @@ public class Song
      */
     public String toString()
     {
-        return "Song Info:" + "\n Title: " + title + 
-            "\n Artist: " + artist + 
-            "\n Release Year: " + releaseYear +
-            "\n Duration: " + duration +
-            "\n Liked: " + (liked? "Yes" : "No");
+        int minutes = duration / 60;
+        int seconds = duration % 60;
+        
+        return "'" + title + "'" + " by " + artist + " (" + minutes + ":" + seconds + ")";
+
+        // return "Song Info:" + "\n Title: " + title + 
+        //     "\n Artist: " + artist + 
+        //     "\n Release Year: " + releaseYear +
+        //     "\n Duration: " + duration +
+        //     "\n Liked: " + (liked? "Yes" : "No");
     }
 }
